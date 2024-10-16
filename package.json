@@ -1,0 +1,17 @@
+{
+  "name": "arbitrack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build-css": "sass frontend/styles.scss frontend/styles.css",
+    "watch-css": "sass --watch frontend/styles.scss frontend/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Arbitrage Bot Frontend and Backend",
+  "devDependencies": {
+    "sass": "^1.79.5"
+  }
+}

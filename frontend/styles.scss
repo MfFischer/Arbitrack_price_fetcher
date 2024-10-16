@@ -1,0 +1,92 @@
+$primary-color: #4CAF50;
+$secondary-color: #333;
+$text-color: #333;
+$background-color: #f9f9f9;
+$border-radius: 8px;
+$input-padding: 12px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  h1 {
+    color: $primary-color;
+  }
+}
+
+.input-section {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+
+  label {
+    font-weight: bold;
+    grid-column: 1 / 2;
+  }
+
+  input {
+    padding: $input-padding;
+    border: 1px solid $secondary-color;
+    border-radius: $border-radius;
+    grid-column: 2 / 3;
+  }
+
+  #fetch-btn {
+    grid-column: 1 / -1;
+    padding: $input-padding;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+.results-section {
+  margin-top: 20px;
+
+  h2 {
+    color: $secondary-color;
+  }
+
+  #results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .result-box {
+      background-color: $background-color;
+      border: 1px solid $secondary-color;
+      border-radius: $border-radius;
+      padding: 15px;
+      flex: 1 1 48%;
+      min-width: 200px;
+
+      p {
+        margin: 5px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+/* Compiled SCSS content */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2F3E46; /* Dark blue-gray */
+  color: #CAD2C5; /* Light gray-green for text */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #354F52; /* Softer dark green-gray */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  color: #84A98C; /* Muted green */
+}
+
+.input-section {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input-section label {
+  font-weight: bold;
+  color: #CAD2C5; /* Light gray-green */
+  grid-column: 1 / 2;
+}
+
+.input-section input {
+  padding: 12px;
+  border: 1px solid #52796F; /* Medium green-gray */
+  border-radius: 8px;
+  background-color: #3E606F; /* Dark green-gray */
+  color: #CAD2C5; /* Light text color */
+  grid-column: 2 / 3;
+}
+
+.input-section #fetch-btn {
+  grid-column: 1 / -1;
+  padding: 12px;
+  background-color: #84A98C; /* Muted green */
+  color: #2F3E46; /* Dark text color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input-section #fetch-btn:hover {
+  background-color: #52796F; /* Slightly darker green-gray */
+  color: #F4F9F9; /* Light text on hover */
+}
+
+.results-section {
+  margin-top: 20px;
+}
+
+.results-section h2 {
+  color: #CAD2C5; /* Light gray-green */
+}
+
+.results-section #results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.results-section .result-box {
+  background-color: #52796F; /* Medium green-gray */
+  border: 1px solid #84A98C; /* Muted green */
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1 1 48%;
+  min-width: 200px;
+  color: #F4F9F9; /* Light text */
+}
+
+.results-section .result-box p {
+  margin: 5px 0;
+}
+/* Align the eye icon within the API key input field */
+.api-key-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.api-key-container input {
+  width: calc(100% - 30px); /* Adjust width to account for the icon */
+}
+
+#toggle-api-key {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #52796F; /* Match with the color scheme */
+}

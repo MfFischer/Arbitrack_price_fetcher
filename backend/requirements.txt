@@ -1,0 +1,4 @@
+Flask==2.0.3              # Flask for the web framework
+aiohttp==3.8.1            # aiohttp for asynchronous HTTP requests
+python-dotenv==0.19.2     # python-dotenv for environment variable management
+requests==2.26.0          # Requests for any synchronous HTTP requests, if needed

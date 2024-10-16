@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container h1 {
+  color: #4CAF50;
+}
+
+.input-section {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.input-section label {
+  font-weight: bold;
+  grid-column: 1/2;
+}
+.input-section input {
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  grid-column: 2/3;
+}
+.input-section #fetch-btn {
+  grid-column: 1/-1;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+.input-section #fetch-btn:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
+}
+
+.results-section {
+  margin-top: 20px;
+}
+.results-section h2 {
+  color: #333;
+}
+.results-section #results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.results-section #results .result-box {
+  background-color: #f9f9f9;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1 1 48%;
+  min-width: 200px;
+}
+.results-section #results .result-box p {
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

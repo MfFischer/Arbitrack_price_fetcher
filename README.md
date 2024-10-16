@@ -1,4 +1,4 @@
-# 📦 Token Arbitrage Tracker
+# 🔍 Token Arbitrage Tracker
 
 <img src="./images/token%20arb.png" alt="Token Arbitrage Dashboard" width="800"/>
 
